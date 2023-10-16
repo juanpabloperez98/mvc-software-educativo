@@ -1,0 +1,52 @@
+.banner{
+  padding-top: 150px;
+  background-image: url('../../assets/home/banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  display: flexbox;
+  position: relative;
+  z-index: -1;
+  color: white;
+
+  ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+
+  h1{
+    margin: auto;
+    width: 70%;
+  }
+
+}
+.content{
+  width: 80%;
+  margin: 40px auto;
+
+  span{
+    font-weight: bold;
+  }
+  .card-text{
+    min-height: 260px;
+  }
+
+  .card-body{
+    .btn{
+      // background-color: rgb(252, 138, 51);
+      background-color: #4A90E2;
+      color: white;
+    }
+    .btn:hover{
+      font-size: 18px;
+    }
+  }
+}
