@@ -8,6 +8,18 @@ export const AppRoutes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'introduccionMVC',
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./modules/introduction-mvc/introduction-mvc.module').then(
+            (m) => m.IntroductionMVCModule
+          ),
+      },
+    ],
+  },
+  {
     path: '**',
     redirectTo: '',
   },

@@ -1,6 +1,21 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "~prismjs/themes/prism-dark";
 
 
 body, p, div {
   text-align: justify;
+}
+
+
+.card-body{
+  .btn{
+    // background-color: rgb(252, 138, 51);
+    background-color: #4A90E2;
+    color: white;
+  }
+  .btn:hover{
+    font-size: 18px;
+  }
 }

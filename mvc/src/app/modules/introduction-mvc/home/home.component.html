@@ -1,0 +1,172 @@
+<app-header></app-header>
+<div class="content">
+  <div class="row">
+    <div class="col-6">
+      <h2 class="mb-4">1.1 Introducción al patrón de diseño MVC</h2>
+      <p class="mt-5 mb-3">
+        Bienvenido al primer módulo de nuestro viaje en "Aprendiendo a desarrollar sistemas de información basados en
+        MVC".
+        En esta etapa inicial, nos sumergiremos en el corazón del patrón Modelo-Vista-Controlador, un enfoque
+        revolucionario
+        que ha redefinido cómo desarrollamos aplicaciones efectivas y eficientes. <br>
+        A lo largo de este módulo, exploraremos:
+      </p>
+      <ul>
+        <li><span>Los Tres Pilares:</span> Desgranaremos cada componente Modelo, Vista y Controlador para descubrir sus
+          roles específicos y cómo trabajan en conjunto para crear aplicaciones dinámicas y escalables.</li>
+        <li><span>Beneficios y Ventajas:</span> Más allá de la teoría, discutiremos las razones prácticas por las que
+          tantos
+          desarrolladores eligen MVC para sus proyectos.</li>
+        <li><span>Casos Prácticos:</span> Ilustraremos con ejemplos concretos cómo se aplica MVC en el mundo real y por
+          qué
+          es relevante para nuestra meta de construir una tienda virtual.</li>
+      </ul>
+    </div>
+    <div class="col-6 content-img">
+      <img src="./assets/introduction/mvc1.png" alt="mvc1.png">
+      <img src="./assets/introduction/mvc2.png" alt="mvc2.png">
+    </div>
+  </div>
+  <hr>
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3>1.2 ¿Qué es el patrón MVC?</h3>
+      <p class="mt-2">
+        <span>MVC</span> es el acrónimo de Modelo-Vista-Controlador, y es un patrón de diseño ampliamente utilizado en
+        el desarrollo
+        de software, particularmente en aplicaciones web y móviles. Su principal objetivo es separar la lógica de la
+        aplicación en tres componentes interconectados. Esto facilita la modularidad, permite un desarrollo más ágil y
+        hace que el código sea más fácil de mantener y escalar.
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <h3>Modelo (Model)</h3>
+      <hr>
+      <p>
+        <span>Definición:</span> Representa la lógica de negocio y los datos de la aplicación. Gestiona y almacena
+        información, y
+        contiene las reglas, lógica y funciones específicas que procesan los datos.
+      </p>
+      <p>
+        <span>Responsabilidades:</span> Interacción con bases de datos (CRUD: crear, leer, actualizar, eliminar),
+        procesamiento y
+        validación de datos, y ejecución de reglas y operaciones de negocio.
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <h3>Vista (View)</h3>
+      <hr>
+      <p>
+        <span>Definición:</span> Es la representación visual de la información, es decir, todo lo que el usuario
+        experimenta e interactúa en la interfaz de la aplicación.
+      </p>
+      <p>
+        <span>Responsabilidades:</span> Mostrar datos al usuario, recibir la interacción del usuario (por ejemplo,
+        clicks, entradas de teclado), y presentar la información de una manera comprensible y atractiva.
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <h3>Controlador (Controller)</h3>
+      <hr>
+      <p>
+        <span>Definición:</span> Actúa como intermediario entre el Modelo y la Vista. Responde a las interacciones del
+        usuario y realiza llamadas al Modelo y la Vista según sea necesario.
+      </p>
+      <p>
+        <span>Responsabilidades:</span> Gestionar las entradas del usuario, solicitar al Modelo que realice ciertas
+        operaciones o cambios, y actualizar la Vista en consecuencia.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="row mt-5">
+    <div class="col-lg-12">
+      <h3>1.3 Ejemplos de MVC en acción</h3>
+      <p>
+        El patrón <span>Modelo-Vista-Controlador (MVC)</span> es una poderosa estructura utilizada en el desarrollo de
+        software que,
+        cuando se implementa correctamente, proporciona claridad, separación de preocupaciones y facilita la
+        mantenibilidad. Pero, ¿cómo se ve esto en la práctica real? Para comprender mejor cómo interactúan estos tres
+        componentes y cómo se combinan para crear aplicaciones robustas y coherentes, vamos a explorar algunos ejemplos
+        concretos de cómo se aplicaría el MVC en escenarios del mundo real. <br><br>
+        A continuación, puedes continuar con los ejemplos detallados, como el de la Red Social mencionado anteriormente
+        o cualquier otro ejemplo que desees incluir para ilustrar el funcionamiento del patrón <span>MVC</span>.
+      </p>
+    </div>
+    <hr>
+    <div class="col-lg-6 mb-3">
+      <h4>Aplicación de tareas pendientes (To-Do List)</h4>
+      <p><span>Modelo:</span> Almacena la lista de tareas, cada tarea con su estado (pendiente, completada).</p>
+      <p><span>Vista:</span> Muestra la lista de tareas al usuario, permitiéndole marcar tareas como completadas o
+        añadir nuevas tareas.</p>
+      <p><span>Controlador:</span> Cuando un usuario añade una tarea, el Controlador la procesa, informa al Modelo para
+        que la almacene y actualiza la Vista para mostrar la nueva tarea.</p>
+    </div>
+    <div class="col-lg-6 mb-3">
+      <h4>Red Social</h4>
+      <p>Imaginemos una plataforma similar a Facebook o Twitter donde los usuarios pueden publicar actualizaciones de
+        estado, seguir a otros usuarios, y recibir noticias o actualizaciones de aquellos a quienes siguen.</p>
+      <p><span>Modelo:</span> Almacena información de cada usuario, como nombre y correo electrónico, junto con sus
+        publicaciones y actualizaciones, incluyendo fechas y detalles. Además, registra las relaciones de seguimiento
+        entre ellos.</p>
+      <p><span>Vista:</span> Exhibe detalles del perfil, las últimas publicaciones, seguidores y seguidos; muestra las
+        actualizaciones recientes de conexiones y facilita el registro e ingreso a la plataforma.</p>
+      <p><span>Controlador:</span> Cuando un usuario publica una actualización, el Controlador procesa la solicitud,
+        informa al Modelo para almacenarla y luego actualiza la Vista para reflejar la nueva entrada tanto en el perfil
+        como en el feed de noticias.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row mt-5">
+    <div class="col-lg-12 mb-4">
+      <h3>1.4 Ejemplo red social</h3>
+      <p>
+        Antes de sumergirnos en nuestro ejemplo práctico sobre el patrón Modelo-Vista-Controlador, es importante señalar
+        que este es un ejemplo simplificado y diseñado para ilustrar los conceptos básicos de MVC en acción.
+
+        Más adelante, en el curso, abordaremos temas más avanzados como conexiones a bases de datos, uso de frameworks
+        específicos y otros aspectos técnicos esenciales en el desarrollo real de aplicaciones. Pero, por el momento,
+        nuestro objetivo es ayudarte a comprender la interacción y el propósito de los tres componentes principales:
+        Modelo, Vista y Controlador, sin la complejidad añadida de herramientas y técnicas avanzadas.
+
+        Piensa en esto como una maqueta o un prototipo: no tiene todas las funcionalidades de un producto final, pero te
+        brinda una clara idea de su estructura y funcionamiento. Una vez que tengas una sólida comprensión de estos
+        fundamentos, estaremos en una mejor posición para abordar y entender los aspectos más técnicos y detallados.
+      </p>
+    </div>
+    <div class="col-12">
+      <h5>Modelo (Utilizando SQLAlchemy para ORM)</h5>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-python">{{ code1 }}
+        </code>
+      </pre>
+    </div>
+    <div class="col-lg-6 mt-5">
+      <h5>Vista (templates en HTML con Jinja2) perfil.html</h5>
+      <pre>
+        <code class="language-html">{{ code2 }}
+      </code>
+      </pre>
+    </div>
+    <div class="col-lg-6 mt-5">
+      <h5>Vista (templates en HTML con Jinja2) feed.html</h5>
+      <pre>
+        <code class="language-html">{{ code3 }}
+      </code>
+      </pre>
+    </div>
+    <div class="col-12 mt-5">
+      <h5>Controlador (Rutas en Flask)</h5>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-python">{{ code4 }}
+        </code>
+      </pre>
+    </div>
+    <div class="col-12 mt-2">
+      <p>
+        Este es un ejemplo simplificado y no incluye características avanzadas como autenticación, pero ofrece una idea
+        clara de cómo el patrón MVC se aplica en una aplicación web.
+      </p>
+    </div>
+  </div>
+</div>

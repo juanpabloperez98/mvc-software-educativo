@@ -4,22 +4,25 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutes } from './app-routing.module';
-import { HeaderComponent } from './shared/header/header.component';
+import { SharedModule } from './shared/shared/shared.module';
+import { HighlightService } from './service/highlight.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(AppRoutes,{
       scrollPositionRestoration: 'top',
     }),
+    SharedModule,
   ],
-  providers: [],
+  providers: [
+    HighlightService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
