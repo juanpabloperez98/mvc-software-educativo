@@ -169,4 +169,131 @@
       </p>
     </div>
   </div>
+  <hr>
+  <div class="row mt-5">
+    <div class="col-6">
+      <h3>1.5 Flujo de Datos en MVC</h3>
+      <p class="mt-3">
+        El patrón Modelo-Vista-Controlador (MVC) es reconocido por la clara delimitación de responsabilidades y el flujo
+        estructurado de datos entre sus tres componentes principales. A continuación, desglosaremos este flujo para
+        entender cómo la información y las responsabilidades se mueven entre el Modelo, la Vista y el Controlador.
+      </p>
+    </div>
+    <div class="col-lg-6 text-center">
+      <img style="width: 400px;" src="./assets/introduction/mvc.png" alt="mvc.png">
+    </div>
+    <div class="col-4">
+      <p>
+        <span>Solicitud del Usuario:</span>
+
+        Todo comienza cuando el usuario realiza una acción o solicitud en la interfaz de la aplicación (Vista). Esto
+        podría ser algo como hacer clic en un botón, llenar un formulario o navegar a otra página.
+      </p>
+    </div>
+    <div class="col-4">
+      <p>
+        <span>Intervención del Controlador:</span>
+
+        La Vista comunica esta acción al Controlador correspondiente. El Controlador interpreta esta acción y decide qué
+        hacer con ella. Si se requieren datos o algún tipo de procesamiento, el Controlador solicitará al Modelo la
+        información o acción necesaria.
+      </p>
+    </div>
+    <div class="col-4">
+      <p>
+        <span>Procesamiento del Modelo:</span>
+
+        El Modelo, que encapsula la lógica de negocio y la gestión de datos, procesa la solicitud del Controlador. Esto
+        puede involucrar consultar una base de datos, realizar cálculos, o cualquier otro tipo de procesamiento
+        necesario.
+        Una vez que ha finalizado, devuelve cualquier dato o resultado relevante al Controlador.
+      </p>
+    </div>
+    <div class="col-4">
+      <p>
+        <span>Actualización de la Vista:</span>
+
+        El Controlador, tras recibir la respuesta del Modelo, procede a actualizar la Vista con la información adecuada.
+        Esto puede ser mostrar nuevos datos, presentar un mensaje al usuario, o incluso redirigir a otra parte de la
+        aplicación.
+      </p>
+    </div>
+    <div class="col-4">
+      <p>
+        <span>Respuesta al Usuario:</span>
+
+        Finalmente, la Vista se actualiza de acuerdo a las instrucciones del Controlador, presentando al usuario el
+        resultado de su solicitud inicial o mostrando la información actualizada.
+      </p>
+    </div>
+    <div class="col-12">
+      <p>
+        El flujo de MVC, en esencia, es un ciclo constante de acciones del usuario, procesamiento de datos y
+        actualizaciones de la interfaz. La belleza de este patrón radica en la separación de responsabilidades,
+        permitiendo que cada componente se enfoque en su tarea específica y se pueda modificar de forma independiente
+        sin afectar a los demás.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="row mt-5">
+    <div class="col-6">
+      <h3>1.6 Ejemplos</h3>
+      <p class="mt-3">
+        Dentro del vasto universo del desarrollo de software, a veces, una ilustración práctica puede aclarar conceptos
+        que palabras solas no pueden. Es en esa premisa que destacamos la sección de "Ejemplos" en este módulo. Al
+        explorar el patrón Modelo-Vista-Controlador, entenderemos mejor su funcionamiento al visualizar cómo se
+        materializa en situaciones reales. <br>
+
+        Los ejemplos aquí brindados te mostrarán el MVC en acción, desentrañando la danza colaborativa entre el Modelo,
+        la Vista y el Controlador. A través de estos, podrás apreciar cómo la teoría se traduce en aplicaciones
+        funcionales y cómo las distintas piezas del patrón interactúan en un entorno de desarrollo real.
+      </p>
+    </div>
+    <div class="col-6">
+      <ul class="example_list">
+        <li>
+          <a routerLink="/introduccionMVC/ejemplo1">
+            Ejemplo 1: Sistema de Reservas de Hoteles
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Ejemplo 2: Sistema de Gestión de Biblioteca
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Ejemplo 3: Aplicación de Reproductor de Música
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <ul class="example_list">
+        <li>
+          <a href="#">Ejercicio 1: Nombre del ejercicio</a>
+        </li>
+        <li>
+          <a href="#">Ejercicio 2: Nombre del ejercicio</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <h3>1.7 Ejercicios</h3>
+      <p class="mt-3">
+        Después de navegar por las aguas teóricas del patrón Modelo-Vista-Controlador, es el momento de zarpar hacia la
+        práctica. Los conceptos, por muy claros que sean en la teoría, encuentran su verdadero valor cuando los ponemos
+        a prueba. Esta sección de "Ejercicios" ha sido diseñada específicamente para ofrecerte ese reto.
+
+        Aquí, te encontrarás con una serie de desafíos prácticos que te animarán a aplicar lo que has aprendido sobre el
+        MVC. Desde la creación de pequeños fragmentos de código hasta la construcción de componentes sencillos, estos
+        ejercicios te empujarán a pensar, diseñar y desarrollar utilizando el patrón MVC.
+
+        Más allá de solo escribir código, se te invitará a tomar decisiones, a enfrentar problemas comunes y a idear
+        soluciones que reflejen una comprensión sólida del MVC.
+      </p>
+    </div>
+  </div>
 </div>
+<app-footer></app-footer>
