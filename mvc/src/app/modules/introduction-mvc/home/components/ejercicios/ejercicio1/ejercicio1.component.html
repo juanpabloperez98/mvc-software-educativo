@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class="content">
+  <div class="row">
+    <div class="col-12 content-title">
+      <h3>
+        Sistema de Gestión de Tareas
+      </h3>
+      <p>
+        Se te presenta un fragmento de código que representa parte de la lógica del controlador para una aplicación de
+        gestión de tareas basada en el patrón MVC. Sin embargo, algunas piezas del código faltan. Tu tarea es arrastrar
+        y soltar las piezas de código correctas de las opciones proporcionadas para completar el controlador.
+      </p>
+    </div>
+    <div class="row mt-5">
+      <!-- Código -->
+      <div class="col-6">
+        <h4 class="mb-3">Fragmento de Código</h4>
+        <pre class="language-language-markup line-numbers">
+          <code class="language-python">{{ code }}
+          </code>
+        </pre>
+      </div>
+      <!-- Fragmentos código -->
+      <div class="col-6 content-explain-exercises">
+        <h5 class="text-center">Pedazos de código</h5>
+        <div cdkDropList (cdkDropListDropped)="onDrop($event)">
+          <div
+            class="example-box"
+            *ngFor="let option of options"
+            cdkDrag
+            #dragItem="cdkDrag"
+            [cdkDragData]="option"
+            (cdkDragStarted)="onDragStarted(dragItem)">
+            {{option}}
+          </div>
+        </div>
+        <!-- <a (click)="change()" class="btn btn-success">Prueba</a> -->
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
