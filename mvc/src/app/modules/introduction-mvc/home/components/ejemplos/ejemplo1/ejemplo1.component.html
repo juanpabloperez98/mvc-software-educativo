@@ -24,13 +24,15 @@
       <div class="col-6 content-explain">
         <h5>Explicación</h5>
         <div>
-          <p class="text-center">
+          <p>
             {{ explain_txt }}
           </p>
         </div>
         <h5>Variables</h5>
         <div>
-          <p></p>
+          <p class="text-center">
+            {{ explain_line }}
+          </p>
         </div>
         <div class="text-center" [ngClass]="{'no-display': start}">
           <a class="btn btn-success" (click)="onStart()">Empezar</a>
@@ -56,13 +58,15 @@
       <div class="col-6 content-explain">
         <h5>Explicación</h5>
         <div>
-          <p class="text-center">
+          <p>
             {{ explain_txt }}
           </p>
         </div>
         <h5>Variables</h5>
         <div>
-          <p></p>
+          <p class="text-center">
+            {{ explain_line }}
+          </p>
         </div>
         <div class="text-center" [ngClass]="{'no-display': start}">
           <a class="btn btn-success" (click)="onStart()">Empezar</a>
@@ -78,7 +82,7 @@
     </div>
     <div class="row mt-5" *ngIf="show3">
       <div class="col-6">
-        <h4 class="mb-3">Vista1 (reserva.html)</h4>
+        <h4 class="mb-3">Vista2 (reserva.html)</h4>
         <pre class="language-language-markup line-numbers">
           <code class="language-html">{{ code3 }}
           </code>
@@ -88,13 +92,15 @@
       <div class="col-6 content-explain">
         <h5>Explicación</h5>
         <div>
-          <p class="text-center">
+          <p>
             {{ explain_txt }}
           </p>
         </div>
         <h5>Variables</h5>
         <div>
-          <p></p>
+          <p class="text-center">
+            {{ explain_line }}
+          </p>
         </div>
         <div class="text-center" [ngClass]="{'no-display': start}">
           <a class="btn btn-success" (click)="onStart()">Empezar</a>
@@ -104,7 +110,41 @@
           <a (click)="next()" class="btn btn-success ms-1">></a>
         </div>
         <div class="text-center mt-5" [ngClass]="{'no-display': finish}">
-          <a (click)="showView(1)" class="btn btn-success">Ver controlador</a>
+          <a (click)="showView(3)" class="btn btn-success">Ver controlador</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5" *ngIf="show4">
+      <div class="col-6">
+        <h4 class="mb-3">Controlador (Rutas en Flask)</h4>
+        <pre class="language-language-markup line-numbers">
+          <code class="language-python">{{ code4 }}
+          </code>
+          <span [style]="line_style"  [style.top]="top_style" class="line-explain"> </span>
+        </pre>
+      </div>
+      <div class="col-6 content-explain">
+        <h5>Explicación</h5>
+        <div>
+          <p>
+            {{ explain_txt }}
+          </p>
+        </div>
+        <h5>Variables</h5>
+        <div>
+          <p class="text-center">
+            {{ explain_line }}
+          </p>
+        </div>
+        <div class="text-center" [ngClass]="{'no-display': start}">
+          <a class="btn btn-success" (click)="onStart()">Empezar</a>
+        </div>
+        <div class="text-center"[ngClass]="{'no-display': !start && finish}">
+          <a (click)="back()" class="btn btn-success"><</a>
+          <a (click)="next()" class="btn btn-success ms-1">></a>
+        </div>
+        <div class="text-center mt-5" [ngClass]="{'no-display': finish}">
+          <a class="btn btn-success">Volver a ejecutar</a>
         </div>
       </div>
     </div>

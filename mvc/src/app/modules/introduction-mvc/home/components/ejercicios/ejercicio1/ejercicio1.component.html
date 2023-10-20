@@ -7,8 +7,8 @@
       </h3>
       <p>
         Se te presenta un fragmento de código que representa parte de la lógica del controlador para una aplicación de
-        gestión de tareas basada en el patrón MVC. Sin embargo, algunas piezas del código faltan. Tu tarea es arrastrar
-        y soltar las piezas de código correctas de las opciones proporcionadas para completar el controlador.
+        gestión de tareas basada en el patrón MVC. Sin embargo, algunas piezas del código faltan. Tu tarea es
+        seleccionar las piezas de código correctas de las opciones proporcionadas para completar el controlador.
       </p>
     </div>
     <div class="row mt-5">
@@ -23,16 +23,25 @@
       <!-- Fragmentos código -->
       <div class="col-6 content-explain-exercises">
         <h5 class="text-center">Pedazos de código</h5>
-        <div cdkDropList (cdkDropListDropped)="onDrop($event)">
+        <!-- <div cdkDropList (cdkDropListDropped)="onDrop($event)">
           <div
             class="example-box"
             *ngFor="let option of options"
             cdkDrag
             #dragItem="cdkDrag"
             [cdkDragData]="option"
-            (cdkDragStarted)="onDragStarted(dragItem)">
-            {{option}}
+            (cdkDragStarted)="onDragStarted(dragItem)"
+            [cdkDragDisabled]="option.status">
+            {{option.code}}
           </div>
+        </div> -->
+        <div *ngFor="let option of options" class="mt-4">
+          <p (click)="addCode(option)" [ngClass]="{'disabled-p': option.status}">
+            {{ option.code }}
+          </p>
+        </div>
+        <div class="text-center" [ngClass]="{'no-display': code_test}">
+          <a class="btn btn-success" (click)="testCode()">Probar código</a>
         </div>
         <!-- <a (click)="change()" class="btn btn-success">Prueba</a> -->
       </div>

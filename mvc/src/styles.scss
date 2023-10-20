@@ -54,12 +54,25 @@ body, p, div {
   border: 1px solid black;
   min-height: 100px;
   border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
 }
 
 .content-explain-exercises div p{
   border: 1px solid black;
   min-height: 50px;
   border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.content-explain-exercises div p:hover{
+  background-color: #ccc;
+  color: white;
+}
+.content-explain-exercises div .disabled-p{
+  background-color: #ccc;
+  color: white;
+  cursor: auto;
 }
 
 .content-explain h5{
