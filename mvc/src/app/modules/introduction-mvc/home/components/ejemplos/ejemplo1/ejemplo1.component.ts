@@ -136,9 +136,9 @@ export class Ejemplo1Component implements OnInit {
     // ----------------------------------------------
     this.max_line = 3
     this.explain = [
-      'explain1',
-      'explain2',
-      'explain3',
+      'Esta línea muestra el nombre del hotel dentro de un elemento h1 (encabezado 1). El texto entre las llaves dobles {{ hotel.nombre }} es una expresión que recupera y muestra el valor de la propiedad nombre del objeto hotel',
+      'Aquí se muestra la ubicación del hotel dentro de un párrafo (<p>). Similar al caso anterior, {{ hotel.ubicacion }} muestra el valor de la propiedad ubicacion del objeto hotel.',
+      'En esta línea, se muestra la cantidad de habitaciones disponibles en el hotel. Nuevamente, {{ hotel.habitaciones_disponibles }} muestra el valor de la propiedad habitaciones_disponibles del objeto hotel.',
     ];
     this.lines = [
       'line1',

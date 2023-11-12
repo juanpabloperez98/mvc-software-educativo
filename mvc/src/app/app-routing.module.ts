@@ -20,6 +20,18 @@ export const AppRoutes: Routes = [
     ],
   },
   {
+    path: 'configuracionIDE',
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./modules/config-ide/config-ide.module').then(
+            (m) => m.ConfigIdeModule
+          ),
+      },
+    ],
+  },
+  {
     path: '**',
     redirectTo: '',
   },
