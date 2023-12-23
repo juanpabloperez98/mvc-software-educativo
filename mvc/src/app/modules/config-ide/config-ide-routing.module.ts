@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home/home.component';
+import { HomeComponent } from 'src/app/home/home.component';
 
 export const configIDERoutes: Routes =[
   {

@@ -3,6 +3,7 @@
 @import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
 @import "~prismjs/themes/prism-dark";
 
+@import 'styles/variables.scss';
 
 body, p, div {
   text-align: justify;
@@ -11,12 +12,13 @@ body, p, div {
 
 .card-body{
   .btn{
-    // background-color: rgb(252, 138, 51);
-    background-color: #4A90E2;
+    background-color: $secondary-color;
     color: white;
   }
   .btn:hover{
     font-size: 18px;
+    color: $primary-color;
+    background-color: $secondary-color;
   }
 }
 
@@ -91,7 +93,7 @@ body, p, div {
     font-size: 20px;
     border: 1px solid black;
     padding: 10px;
-    background-color: #4A90E2;
+    background-color: $secondary-color;
     margin-top: 20px;
     cursor: pointer;
     border-radius: 20px;

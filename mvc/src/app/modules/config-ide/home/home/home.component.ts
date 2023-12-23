@@ -42,7 +42,7 @@ else:
 print(f"Resultado: {resultado}")`
 
   code2 = `def celsius_a_fahrenheit(celsius):
-return (celsius * 9/5) + 32
+  return (celsius * 9/5) + 32
 temperatura_celsius = float(input("Ingrese la temperatura en grados Celsius: "))
 temperatura_fahrenheit = celsius_a_fahrenheit(temperatura_celsius)
 print(f"La temperatura en grados Fahrenheit es: {temperatura_fahrenheit}")`
@@ -62,6 +62,45 @@ print(f"La temperatura en grados Fahrenheit es: {temperatura_fahrenheit}")`
       return f'¡Hola, {nombre}! Bienvenido a mi aplicación web con Flask.'
   if __name__ == '__main__':
       app.run(debug=True)`
+
+
+  code5 = `from flask import Flask, render_template
+  app = Flask(__name__)
+  @app.route('/')
+  def index():
+      return render_template('index.html')
+  if __name__ == '__main__':
+      app.run(debug=True)`
+
+
+  code6 = `<!DOCTYPE html>
+  <html>
+  <head>
+      <title>Mi Tienda Online</title>
+  </head>
+  <body>
+      <h1>Bienvenido a {{ tienda_nombre }}</h1>
+      <p>Explora nuestros productos:</p>
+      <ul>
+          {% for producto in productos %}
+              <li>{{ producto.nombre }} - $ {{ producto.precio }}</li>
+          {% endfor %}
+      </ul>
+  </body>
+  </html>
+  `
+
+
+  code7 = `from flask import render_template
+  @app.route('/')
+  def index():
+      tienda_nombre = "Mi Tienda Online"
+      productos = [
+          {"nombre": "Producto 1", "precio": 19.99},
+          {"nombre": "Producto 2", "precio": 29.99},
+          {"nombre": "Producto 3", "precio": 39.99},
+      ]
+      return render_template('index.html', tienda_nombre=tienda_nombre, productos=productos)`
 
   ngOnInit(): void {
   }

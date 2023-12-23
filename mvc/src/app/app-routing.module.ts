@@ -32,6 +32,18 @@ export const AppRoutes: Routes = [
     ],
   },
   {
+    path: 'databases',
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./modules/databases/databases.module').then(
+            (m) => m.DatabasesModule
+          ),
+      },
+    ],
+  },
+  {
     path: '**',
     redirectTo: '',
   },

@@ -1,6 +1,8 @@
+@import '../../../../styles/variables.scss';
+
 nav{
-  background-color: #4A90E2;
-  border-bottom: 2px solid #F5F5F5;
+  background-color: $primary-color;
+  border-bottom: 2px solid $five-color;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -18,12 +20,12 @@ nav{
   #title{
     text-align: left !important;
     width: 60%;
-    color: white;
+    color: $five-color;
     margin: 0px 0px 0px 20px;
   }
 
   ul li a{
     text-align: left !important;
-    color: white !important;
+    color: $five-color !important;
   }
 }

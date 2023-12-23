@@ -320,7 +320,24 @@
         <code class="language-python">{{ code1 }}
         </code>
       </pre>
+      <p>
+        Este código implementa una calculadora simple que realiza operaciones básicas de suma, resta, multiplicación y
+        división. El usuario ingresa la operación deseada y dos números. Luego, el programa realiza la operación
+        seleccionada y muestra el resultado.
+
+        El código utiliza funciones separadas para cada operación matemática (suma, resta, multiplicación, división)
+        para organizar el código de manera modular y mejorar la legibilidad. Además, se maneja la división por cero
+        mediante una condición que verifica si el divisor es diferente de cero.
+
+        El programa solicita al usuario que ingrese la operación y los números a través de la entrada de datos. Luego,
+        utiliza una estructura condicional (if-elif-else) para determinar la operación a realizar y llama a la función
+        correspondiente. Finalmente, imprime el resultado de la operación.
+
+        Este ejemplo es útil para comprender cómo estructurar funciones en Python, manejar entrada de usuario y aplicar
+        estructuras de control condicional para realizar diferentes operaciones matemáticas.
+      </p>
     </div>
+    <hr>
     <div class="col-12">
       <h4>Ejemplo 2: Conversor de Temperatura en Python</h4>
       <p>
@@ -390,6 +407,117 @@
         <li>La aplicación se inicia con app.run(debug=True). La opción debug=True activa el modo de depuración, lo que
           facilita la identificación y corrección de errores durante el desarrollo.</li>
       </ul>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2>2.8 Ejemplo de Uso de Jinja2 con Flask en Python</h2>
+      <p>
+        En este ejemplo, estamos creando una aplicación web simple utilizando Flask, un framework web para Python, junto
+        con Jinja2, un motor de plantillas. La aplicación representa una tienda online con productos, y usaremos Jinja2
+        para renderizar dinámicamente HTML con datos provenientes de nuestro controlador Flask.
+      </p>
+    </div>
+    <div class="col-12">
+      <h4>Paso 1: Creación de una Ruta en Flask</h4>
+      <p>
+        En esta sección, definimos una ruta básica en Flask que responde a la URL raíz ("/"). Cuando un usuario visita
+        esta ruta, la función index() se ejecuta y renderiza una plantilla utilizando Jinja2. Esta plantilla mostrará el
+        nombre de la tienda y algunos productos.
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-python">{{ code5 }}
+        </code>
+      </pre>
+    </div>
+    <div class="col-12">
+      <h4>Paso 2: Plantilla Jinja2 (templates/index.html)</h4>
+      <p>
+        En el archivo HTML de la plantilla, estamos utilizando la sintaxis de Jinja2 para insertar dinámicamente datos
+        en el HTML. El nombre de la tienda y la lista de productos se pasan desde el controlador Flask y se muestran en
+        la página web generada.
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-python">{{ code6 }}
+        </code>
+      </pre>
+    </div>
+    <div class="col-12">
+      <h4>Paso 3: Controlador (puede estar en otro archivo)</h4>
+      <p>
+        En este bloque de código, se encuentra el controlador Flask que maneja la lógica de la aplicación. Se define una
+        función index() que proporciona datos (como el nombre de la tienda y la lista de productos) y renderiza la
+        plantilla Jinja2 con estos datos. Los datos pueden provenir de la base de datos u otras fuentes.
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-python">{{ code7 }}
+        </code>
+      </pre>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-6">
+      <h3>1.6 Ejemplos</h3>
+      <p class="mt-3">
+        Dentro del fascinante mundo del desarrollo de software, la sección de "Ejemplos" es una ventana que nos permite
+        observar directamente la aplicación de conceptos teóricos en situaciones prácticas. En este módulo, nos
+        sumergiremos en ejemplos concretos de Python y Flask, dos herramientas poderosas en el desarrollo web.
+
+        En el contexto del patrón Modelo-Vista-Controlador (MVC), exploraremos la implementación práctica de estos
+        conceptos. A través de la ejecución de código real, visualizaremos la interacción armoniosa entre el Modelo, la
+        Vista y el Controlador, desentrañando la coreografía que define la estructura de nuestras aplicaciones. <br>
+
+        Los ejemplos presentados a continuación servirán como guía para comprender cómo el MVC cobra vida en proyectos
+        reales. Veremos cómo las distintas partes del patrón colaboran para crear aplicaciones funcionales y cómo la
+        teoría se traduce de manera efectiva en la realidad del desarrollo. <br>
+
+        ¡Acompáñanos en este recorrido práctico y descubre cómo Python y Flask pueden ser aliados poderosos en la
+        creación de aplicaciones web robustas y estructuradas bajo el paradigma MVC!
+      </p>
+    </div>
+    <div class="col-6">
+      <ul class="example_list">
+        <li>
+          <a routerLink="/introduccionMVC/ejemplo1">
+            Ejemplo 1: Sistema de Reservas de Hoteles
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Ejemplo 2: Sistema de Gestión de Biblioteca
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Ejemplo 3: Aplicación de Reproductor de Música
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <ul class="example_list">
+        <li>
+          <a routerLink="/introduccionMVC/ejercicio1">Ejercicio 1: Sistema de Gestión de Tareas</a>
+        </li>
+        <li>
+          <a href="#">Ejercicio 2: Nombre del ejercicio</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <h3>1.7 Ejercicios</h3>
+      <p class="mt-3">
+        Después de navegar por las aguas teóricas del patrón Modelo-Vista-Controlador, es el momento de zarpar hacia la
+        práctica. Los conceptos, por muy claros que sean en la teoría, encuentran su verdadero valor cuando los ponemos
+        a prueba. Esta sección de "Ejercicios" ha sido diseñada específicamente para ofrecerte ese reto.
+
+        Aquí, te encontrarás con una serie de desafíos prácticos que te animarán a aplicar lo que has aprendido sobre el
+        MVC. Desde la creación de pequeños fragmentos de código hasta la construcción de componentes sencillos, estos
+        ejercicios te empujarán a pensar, diseñar y desarrollar utilizando el patrón MVC.
+
+        Más allá de solo escribir código, se te invitará a tomar decisiones, a enfrentar problemas comunes y a idear
+        soluciones que reflejen una comprensión sólida del MVC.
+      </p>
     </div>
   </div>
 </div>
