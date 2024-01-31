@@ -1,0 +1,23 @@
+.content{
+  padding-top: 130px;
+  width: 80%;
+  min-height: 100vh;
+  margin: auto auto 40px auto;
+  span{
+    font-weight: bold;
+  }
+  .content-img{
+    text-align: center;
+    img{
+      width: 300px;
+      margin-top: 50px;
+    }
+  }
+  .content-explain{
+    input{
+      width: 30%;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+  }
+}

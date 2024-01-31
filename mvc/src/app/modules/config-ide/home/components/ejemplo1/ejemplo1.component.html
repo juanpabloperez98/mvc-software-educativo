@@ -1,0 +1,50 @@
+<app-header></app-header>
+<div class="content">
+  <div class="row">
+    <div class="col-12 content-title">
+      <h3>
+        Encontrar Números Primos
+      </h3>
+      <p>
+        Desarrolla un programa que encuentre todos los números primos dentro de un rango especificado por el usuario.
+      </p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-6">
+        <pre class="language-language-markup line-numbers">
+          <code class="language-python">{{ code }}
+          </code>
+          <span [style]="line_style"  [style.top]="top_style" class="line-explain"> </span>
+        </pre>
+      </div>
+      <div class="col-6 content-explain">
+        <h5>Explicación</h5>
+        <div>
+          <p>
+            {{ explain_txt }}
+          </p>
+        </div>
+        <div [ngClass]="{'no-display': !showValueInput}">
+          <h5>Ingresar datos</h5>
+          <div class="mb-5 text-center">
+            <input type="text" name="inputData" id="inputData" [(ngModel)]="valueInput">
+          </div>
+        </div>
+        <h5>Variables</h5>
+        <div>
+          <p class="text-center">
+            {{ explain_line }}
+          </p>
+        </div>
+        <div class="text-center" [ngClass]="{'no-display': start}">
+          <a class="btn btn-success" (click)="onStart()">Empezar</a>
+        </div>
+        <div class="text-center" [ngClass]="{'no-display': !start && finish}">
+          <a (click)="back()" class="btn btn-success"><</a>
+              <a (click)="next()" class="btn btn-success ms-1">></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer style="margin-top: 200px;"></app-footer>
